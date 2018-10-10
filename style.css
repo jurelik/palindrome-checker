@@ -1,0 +1,30 @@
+/* Global Rules */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Class Definitions */
+
+/* ID Definitions */
+
+#main-div {
+  align-items: center;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+#result {
+  border: 1px solid black;
+  height: 20px;
+}
