@@ -11,11 +11,19 @@
 <body>
   <main>
     <div id="main-div">
-      <div id="form">
-        <input type="text" name="word" id="word">
-        <input type="button" value="click me" onclick="palindrome(document.getElementById('word').value);">
+      <div id="description">
+        <h1>PALINDROME CHECKER</h1>
+        <p>This is a palindrome checker built for one of the FCC Javascript challenges.</p>
+        <!-- <p>Enter a string and find out if it is a palindrome or not!</p> -->
       </div>
-      <p id="result"></p>
+      <div id="form">
+        <div id="form-inner">
+          <input type="text" name="word" id="word">
+          <!-- <input type="button" value="click me" id="check" onclick="palindrome(document.getElementById('word').value);"> -->
+          <button type="button" id="check-btn" onclick="palindrome(document.getElementById('word').value); removeFocus();">click me</button>
+        </div>
+        <p id="result"></p>
+      </div>
     </div>
   </main>
 </body>

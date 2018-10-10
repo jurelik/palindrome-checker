@@ -5,18 +5,70 @@
 }
 
 html, body {
+  background-color: beige;
   font-family: Helvetica, sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+input[type='text'] {
+  font-size: 1em;
+  font-weight: 200;
 }
 
 /* Class Definitions */
 
 /* ID Definitions */
 
+#check-btn {
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: 200;
+  height: 30px;
+  margin-left: 5px;
+  transition: background-color 250ms ease-in-out, transform 100ms ease;
+  width: 100px;
+}
+
+#check-btn:hover, #check-btn:focus {
+  background-color: rgb(245, 245, 245);
+}
+
+#check-btn:active {
+  transform: scale(0.99);
+  outline: none;
+}
+
+#description h1 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#description p {
+  font-weight: 300;
+  text-align: center;
+}
+
+#form {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+#form-inner {
+  flex-direction: row;
+  display: flex;
+}
+
 #main-div {
   align-items: center;
-  border: 3px solid black;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -25,6 +77,14 @@ html, body {
 }
 
 #result {
-  border: 1px solid black;
+  font-weight: 200;
   height: 20px;
+}
+
+#word {
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+  height: 30px;
+  width: 15vw;
+  min-width: 100px;
 }
