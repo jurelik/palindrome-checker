@@ -5,8 +5,9 @@ let palindrome = function(str) {
   let revArr = [];
   let revStr;
 
+  let alert = document.querySelector('#result');
+
   for (let i = 0; i < arr.length ; i++) {
-    // arr[i] = arr.splice(arr.length - 1 - i, 1, arr[i]).push;
     revArr.push(arr.slice(arr.length - 1 - i, arr.length - i));
   }
   revArr = revArr.flat();
@@ -14,11 +15,11 @@ let palindrome = function(str) {
   console.log(revStr);
 
   if (strClean === revStr) {
+    alert.textContent = 'true';
     console.log(true);
     return true;
   }
+  alert.textContent = 'false';
   console.log(false);
   return false;
 }
-
-palindrome('race&&&_?/.\|{}-+=!!`~CAR');
