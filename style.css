@@ -7,14 +7,14 @@
 html, body {
   background-color: beige;
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 100%;
   margin: 0;
   padding: 0;
 }
 
 input[type='text'] {
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* Class Definitions */
@@ -29,7 +29,7 @@ input[type='text'] {
   cursor: pointer;
   display: block;
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 300;
   height: 30px;
   margin-left: 5px;
   transition: background-color 250ms ease-in-out, transform 100ms ease;
@@ -46,6 +46,7 @@ input[type='text'] {
 }
 
 #description h1 {
+  font-size: 2em;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -53,6 +54,7 @@ input[type='text'] {
 }
 
 #description p {
+  font-size: 1em;
   font-weight: 300;
   text-align: center;
 }
@@ -77,7 +79,8 @@ input[type='text'] {
 }
 
 #result {
-  font-weight: 200;
+  font-size: 1em;
+  font-weight: 300;
   height: 20px;
 }
 
@@ -87,4 +90,23 @@ input[type='text'] {
   height: 30px;
   width: 15vw;
   min-width: 100px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 541px) {
+  #form-inner {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #word {
+    width: 50vw;
+  }
+
+  #check-btn {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 50vw;
+  }
 }
